@@ -1,1 +1,8 @@
-# infrastructure-webinar-demo
+# Infrastructure Webinar Demo using UP42 SDK
+
+UP42’s Python Software Development Kit (SDK) is a set of programming modules that integrates UP42’s powerful infrastructure for geospatial data & processing workflows. The Python package provides direct access to the UP42 Application Program Interface (API), data visualizations, and a Command Line Interface (CLI). The interfaces are built to empower customization, automation, and integration into any geospatial workflows.
+
+To start using our SDK install the [up42-py package](https://pypi.org/project/up42-py/). You can find the UP42 SDK documentation [here](https://sdk.up42.com/).
+
+# Tree height detection use case
+Railway operators must ensure secure uninterrupted transport. To achieve this they rely on effective monitoring and maintenance of their railway network. Tree falls onto railway tracks or overhead lines rank among the most common causes of disruptions of a natural origin [[Bíl et. al (2017)](https://www.researchgate.net/publication/318816940_Identifying_locations_along_railway_networks_with_the_highest_tree_fall_hazard)]. Thus, there is a need for regular inspections of vegetation inside and near the railway corridors to detect trees or tree branches that need to be cut. With UP42 you are able to get information on tree height using high resolution satellite imagery, for example [Pleiades](https://marketplace.up42.com/block/18d09f1a-3197-4c27-a15a-54d099c31435) or [SPOT](https://marketplace.up42.com/block/045019bb-06fc-4fa1-b703-318725b4d8af) data, in combination with the spacept  [SPOT](https://marketplace.up42.com/block/045019bb-06fc-4fa1-b703-318725b4d8af) block.
