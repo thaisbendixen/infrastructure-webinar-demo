@@ -1,0 +1,5 @@
+up42-py
+keplergl
+jupyterlab
+geopandas
+json
