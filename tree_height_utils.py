@@ -6,9 +6,9 @@ def cleaning_data(path_tree_results: str):
         data_tree_height = json.load(json_file)
 
     number_of_tiles = len(data_tree_height["features"])
-    # for each tile get the features and conoctate them in a list
-    tree_feature_list = []
 
+    # for each tile get the features and concatenate them in a list
+    tree_feature_list = []
     for i in range(number_of_tiles):
         try:
             features = data_tree_height["features"][i]["features"]["features"] # get each tree height feature list
@@ -25,7 +25,7 @@ def cleaning_data(path_tree_results: str):
         dst.write(json.dumps(collection))
 
     trees_gdf = gpd.read_file('treeheight_asturias.geojson')
-    # kepler requires crs in lat/long thus transforming crs is require
+    # kepler requires crs in lat/long, thus transforming crs is required
     trees_gdf.set_crs(epsg=3857, inplace=True, allow_override=True)
     geo_trees_gdf = trees_gdf.to_crs(epsg=4326)
 
@@ -36,6 +36,7 @@ def cleaning_data(path_tree_results: str):
 
 
 def get_kepler_config():
+# configuration for kepler map
  config = {'config': {'mapState': {'bearing': 12.732663821526033,
                          'dragRotate': True,
                          'isSplit': False,
